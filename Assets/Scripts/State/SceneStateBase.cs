@@ -9,19 +9,19 @@ public abstract class SceneStateBase
     /// </summary>
     /// <param name="gameManager">シーンステートの管理者</param>
     /// <param name="preState">前のステート</param>
-    public virtual void OnEnter(GManager gameManager, SceneStateBase preState){ }
+    public virtual void OnEnter(GameManager gameManager, SceneStateBase preState){ }
 
 
     /// <summary>
     /// フレームごとに呼ばれる
     /// </summary>
     /// <param name="gameManager">シーンステートの管理者</param>
-    public virtual void OnUpdate(GManager gameManager){ }
+    public virtual void OnUpdate(GameManager gameManager){ }
 
     /// <summary>
     /// 終了時に呼ばれる
     /// </summary>
     /// <param name="gameManager">シーンステートの管理者</param>
     /// <param name="nextState">次のステート</param>
-    public virtual void OnExit(GManager gameManager, SceneStateBase nextState){ }
+    public virtual void OnExit(GameManager gameManager, SceneStateBase nextState){ }
 }
